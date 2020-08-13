@@ -1,2 +1,11 @@
-# Folio-API
-A Yoobee project repo called Folio. This is the node api dev repo.
+# Folio | API
+
+## To Install Packages 
+```
+npm i
+```
+
+### Run Dev Env
+```
+npm run watch
+```
