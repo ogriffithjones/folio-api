@@ -1,0 +1,24 @@
+{
+  "name": "folio-api",
+  "version": "1.0.0",
+  "description": "A Yoobee project repo called Folio. This is the node api dev repo.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogriffithjones/folio-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ogriffithjones/folio-api/issues"
+  },
+  "homepage": "https://github.com/ogriffithjones/folio-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
