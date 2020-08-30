@@ -6,19 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ogriffithjones/folio-api.git"
   },
-  "author": "",
+  "author": "Folio Team",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ogriffithjones/folio-api/issues"
   },
   "homepage": "https://github.com/ogriffithjones/folio-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "morgan": "^1.10.0"
   }
 }
