@@ -10,7 +10,7 @@ const app = express();
 // Env Vars
 dotenv.config();
 // Is production?
-const isProduction = false;
+const isProduction = process.env.PRODUCTION;
 // Use cors with express
 app.use(cors());
 // JSON
