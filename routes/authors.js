@@ -19,7 +19,7 @@ router.param("id", (req, res, next, id) => {
 
 router.get("/", (req, res, next) => {
   Author.find({})
-    .select("name email")
+    .select("name url")
     .sort({ createdAt: "desc" })
     .then((results) => {
       return res.send(results);

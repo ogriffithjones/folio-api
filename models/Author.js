@@ -10,6 +10,7 @@ const AuthorSchema = new mongoose.Schema(
             type: String,
             lowercase: true,
             unique: true,
+            url: String,
             required: [true, "An email address is required"],
             match: [/\S+@\S+\.\S+/, "not a valid email address"],
             index: true
