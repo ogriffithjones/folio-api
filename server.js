@@ -40,6 +40,9 @@ app.get("/", (req, res) => {
 const authors = require("./routes/authors.js");
 app.use("/authors", authors);
 
+const projects = require("./routes/projects.js");
+app.use("/projects", projects);
+
 // ERROR handeling
 // if not in production it will print the stacktrace
 
