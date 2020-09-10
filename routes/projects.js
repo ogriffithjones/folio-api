@@ -16,6 +16,13 @@ router.param("id", (req, res, next, id) => {
 
 router.get("/", (req, res, next) => {
     res.send("Welcome to the projects endpoint");
+    Project.find({})
+    .select("title description")
+    .sort({ createdAt: "desc" })
+    .then((results) => {
+      return res.send(results);
+    })
+    .catch(next);
 });
 
 router.get("/:id", (req, res, next) => {
