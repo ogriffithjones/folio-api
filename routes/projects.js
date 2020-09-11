@@ -25,6 +25,10 @@ router.get("/", (req, res, next) => {
     .catch(next);
 });
 
+router.get("/:id", (req, res, next) => {
+  return res.status(200).send(req.article);
+});
+
 router.delete("/:id", (req, res, next) => {
     Project.findByIdAndDelete(req.project.id)
       .then((project) => {
